@@ -56,18 +56,18 @@ if (조건):
 
 ```python
 def get_impala_connection(
-    app_name: str = "dw-admin",
-    phase: str = "live",
-    branch: str = "master",
-    target_idc: str = "dc1",
+    app_name: str = "",
+    phase: str = "",
+    branch: str = "",
+    target_idc: str = "",
 ) -> Impala:
     """Impala 연결 객체를 생성하는 함수
 
     Args:
-        app_name (str, optional): 애플리케이션 이름. Defaults to "dw-admin".
-        phase (str, optional): 환경 설정. Defaults to "live".
-        branch (str, optional): 브랜치 이름. Defaults to "master".
-        target_idc (str, optional): 대상 IDC. Defaults to "dc1".
+        app_name (str, optional): 애플리케이션 이름. Defaults to "".
+        phase (str, optional): 환경 설정. Defaults to "".
+        branch (str, optional): 브랜치 이름. Defaults to "".
+        target_idc (str, optional): 대상 IDC. Defaults to "".
 
     Returns:
         Impala: Impala 연결 객체
